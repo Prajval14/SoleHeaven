@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google Fonts Reference -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <!-- External Stylesheet  Reference -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/loginsignup.css" />
+    <title>Sole Heaven</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Navbar -->
+      <div class="navbar">
+        <h1 class="logo">
+          <a href="../index.html">
+            <img src="../img/Sole__1_-removebg-preview.png" alt="" />
+          </a>
+
+          <span
+            class="material-symbols-outlined menu-icon"
+            onclick="toggleClass()"
+            style="color: red"
+          >
+            menu
+          </span>
+        </h1>
+
+        <nav id="list">
+          <ul class="links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./aboutus.html">About</a></li>
+            <li><a href="./contacts.html">Contact Us</a></li>
+
+            <li><a href="./signup.html">Sign Up</a></li>
+          </ul>
+        </nav>
+      </div>
+      <main>
+        <div class="signup">
+          <h1><b>SIGN UP</b></h1>
+          <!-- Sign Up Form -->
+          <form action="">
+            <div class="row">
+              <div class="input">
+                <label for="firstname">First Name</label>
+                <input
+                  type="text"
+                  id="firstname"
+                  name="firstname"
+                  placeholder="enter first name"
+                  required
+                />
+              </div>
+              <div class="input">
+                <label for="lastname">Last Name</label>
+                <input
+                  type="text"
+                  id="lastname"
+                  name="lastname"
+                  placeholder="enter last name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="input">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="enter email"
+                  required
+                />
+              </div>
+              <div class="input">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="enter password"
+                  required
+                  minlength="8"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="input" style="font-size: larger">
+                <input type="radio" id="male" name="gender" value="Male" />
+                  <label for="male">Male</label><br />
+                 
+                <input type="radio" id="female" name="gender" value="Female" />
+                  <label for="female">Female</label><br />
+                 
+                <input type="radio" id="others" name="gender" value="others" />
+                  <label for="others">Others</label>
+              </div>
+              <div class="input">
+                <label for="birthdate">Birthdate</label>
+                <input type="date" id="birthdate" name="birthdate" required />
+              </div>
+            </div>
+            <div class="input">
+              <button class="loginbtn">SIGN UP</button>
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2023 SoleHeaven, Inc. All Rights Reserved</p>
+    </footer>
+  </body>
+  <!-- JavaScript To Handle Navbar-->
+  <script>
+    function toggleClass() {
+      console.log("Toggle class");
+      if (document.getElementById("list").style.display == "")
+        document.getElementById("list").style.display = "block";
+      else document.getElementById("list").style.display = "";
+    }
+  </script>
+</html>

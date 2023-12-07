@@ -1,0 +1,179 @@
+.banner {
+  height: 420px;
+  width: 100%;
+  color: black;
+  font-weight: 900;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner1 {
+  background-image: url(../img/img3.jpg);
+}
+
+.banner1 p {
+  font-size: small;
+  text-transform: uppercase;
+  margin: 4px 0;
+}
+
+.banner1 p .big {
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+  margin: 4px;
+  color: red;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: changeColor 0.5s infinite;
+}
+@keyframes changeColor {
+  0% {
+    color: red;
+  }
+  100% {
+    color: white;
+  }
+}
+
+.banner2 {
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url(../img/nike.jpg);
+  text-align: left;
+}
+
+.banner2 .partner {
+  font-size: 2rem;
+}
+
+.banner2 .shop-now-btn {
+  background-color: black;
+  font-size: 1.3rem;
+  font-style: italic;
+  border: none;
+  color: white;
+  font-weight: 900;
+  padding: 1rem;
+  border-radius: 8px;
+  align-self: center;
+  margin-top: 100px;
+  text-transform: uppercase;
+}
+
+.text-container {
+  width: 100%;
+  padding: 0.5rem;
+  backdrop-filter: blur(8px);
+}
+
+.section2 {
+  padding: 8px;
+  width: 100%;
+}
+
+.collection {
+  width: 100%;
+}
+
+.card-holder {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.card {
+  width: 45%;
+  text-align: center;
+  margin: 8px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: red;
+}
+
+.card img {
+  max-width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.card figcaption {
+  padding: 2px;
+}
+
+.card figcaption b {
+  font-size: 30px;
+}
+
+/* Footer */
+
+footer table {
+  text-align: center;
+  border-collapse: collapse;
+  width: 70%;
+  margin: 8px auto;
+}
+
+footer table,
+th,
+td {
+  border: 1px solid;
+}
+
+footer table th,
+td {
+  margin: 8px;
+  padding: 8px;
+}
+
+/* Media query for screens with a minimum width of 481 pixels and a maximum of 768 pixels (typical for larger phone and tablet) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .banner {
+    height: 500px;
+    font-size: 3rem;
+  }
+
+  .card {
+    max-width: 30%;
+    margin: 8px;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Media query for screens with a minimum width of 768 pixels and a maximum of 1023 pixels (typical for laptop) */
+@media only screen and (min-width: 768px) {
+  .banner {
+    height: 600px;
+  }
+
+  .banner1 p .big {
+    font-size: 6rem;
+  }
+
+  .card {
+    width: 22%;
+    margin: 16px;
+  }
+
+  .card-holder {
+    flex-wrap: wrap;
+  }
+
+  h4 {
+    text-align: center;
+    font-size: 2rem;
+  }
+}

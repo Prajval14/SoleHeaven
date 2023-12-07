@@ -1,0 +1,120 @@
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styling */
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+/* Logo styling */
+.logo {
+  text-align: left;
+}
+
+/* Container styling */
+.container {
+  margin: 0 auto;
+  min-width: 95%;
+}
+
+/* Image section styling */
+.image-section {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Text styling within the image section */
+.text {
+  padding: 1rem;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  top: 30%;
+  z-index: 2;
+}
+
+.text h1 {
+  font-size: 4rem;
+}
+
+.text p {
+  max-width: 80%;
+  margin: 24px auto 0 auto;
+  font-size: 1.5rem;
+}
+
+/* Gallery styling */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Individual photo styling */
+.photo {
+  background-color: white;
+  width: 400px;
+  margin: 16px;
+  height: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.5s;
+}
+
+.photo:hover img {
+  transform: scale(1.1);
+}
+
+/* Footer styling */
+footer {
+  background-color: rgb(79, 79, 79);
+  color: white;
+  padding: 16px;
+  font-size: 1.5rem;
+}
+
+/* Content styling */
+.content {
+  text-align: left;
+  margin: auto;
+  width: fit-content;
+}
+
+.content p {
+  margin-top: 8px;
+}
+
+/* Media query for screens with a maximum width of 500px */
+@media screen and (max-width: 500px) {
+  .text {
+    top: 26%;
+  }
+
+  .text h1 {
+    font-size: 2rem;
+  }
+
+  .text p {
+    font-size: 1rem;
+  }
+
+  .image-section {
+    height: 500px;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,140 @@
+/* Body Styling */
+body {
+  background-color: #35363a;
+  background: url("../img/img2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: blur(8px);
+}
+
+main {
+  text-align: center;
+  color: white;
+}
+
+.heading {
+  font-size: 24px;
+  color: red;
+  padding: 8px;
+  font-weight: 800;
+}
+
+/* Form Styling */
+.form {
+  position: relative;
+}
+
+.form .input-field {
+  display: flex;
+  margin: 16px;
+}
+
+.form .input-field label {
+  background-color: #232323;
+  padding: 8px;
+  width: 40%;
+}
+
+.form .input-field input {
+  width: 100%;
+  background-color: #161616;
+  padding: 8px;
+  border: 0;
+  color: white;
+  width: 100%;
+}
+
+.form .input-field textarea {
+  width: 100%;
+  background-color: #161616;
+  padding: 8px;
+  border: 0;
+  color: white;
+  width: 100%;
+}
+
+.contactnum {
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+  background-color: #282828;
+}
+
+.contactnum p {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  display: flex;
+}
+
+.contactnum p a {
+  display: flex;
+  align-items: center;
+}
+
+.inside-contact {
+  border: 1px solid rgb(144, 139, 139);
+  margin: 6px;
+}
+
+.inside-contact p span {
+  margin: 0 8px;
+}
+
+/* Button Styling */
+.send-btn {
+  background-color: #1f1f1f;
+  color: white;
+  margin: 2px;
+  border-radius: 8px;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  position: absolute;
+  bottom: 8px;
+  right: 24px;
+}
+
+/* Map Styling */
+.map {
+  text-align: center;
+  margin: 8px 0;
+}
+
+/* Media query for screens with a minimum width of 481 pixels and a maximum of 768 pixels (typical for larger phone and tablet) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .heading {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+}
+
+/* Media query for screens with a minimum width of 768 pixels and a maximum of 1023 pixels (typical for laptop) */
+@media only screen and (min-width: 768px) {
+  .media-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .media-container .form {
+    width: 45%;
+  }
+
+  .media-container .social-media {
+    width: 45%;
+  }
+
+  .send-btn {
+    bottom: 170px;
+  }
+
+  .heading {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+
+  .map {
+    margin: 24px 0;
+  }
+}

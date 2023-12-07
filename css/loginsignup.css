@@ -1,0 +1,120 @@
+/* Body Styling */
+body {
+  background-image: url("../img/womens/p6/pump-shoes-8272966_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Form Styling */
+form {
+  margin: 0 8px 16px 8px;
+}
+
+.signup {
+  background-color: rgb(255 255 255 / 0.3);
+  backdrop-filter: blur(32px);
+  width: 95%;
+  padding: 8px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+
+.signup h1 {
+  margin: 8px;
+  font-weight: 700;
+  color: red;
+}
+
+.signup .input {
+  font-weight: 600;
+  padding: 8px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 100%;
+  text-align: left;
+}
+
+.signup .input label {
+  width: 35%;
+  margin: 8px;
+}
+
+.signup .input input {
+  width: 65%;
+  padding: 8px;
+  border: 0;
+  border-radius: 8px;
+}
+
+.loginbtn {
+  font-family: "Montserrat", sans-serif;;
+  padding: 12px;
+  border-radius: 16px;
+  border: none;
+  background-color: #0f6fc5;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.signupbtn {
+  width: 90%;
+}
+
+.loginbtn:hover {
+  background-color: white;
+  color: #0f6fc5;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+/* Media query for screens with a minimum width of 481 pixels and a maximum of 768 pixels (typical for larger phone and tablet) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .signup {
+    width: 80%;
+  }
+}
+
+/* Media query for screens with a minimum width of 768 pixels and a maximum of 1200 pixels (typical for laptops) */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .signup {
+    width: 75%;
+  }
+
+  .signup .input {
+    width: 80%;
+    align-self: center;
+  }
+}
+
+/* Media query for screens with a minimum width of 1200 pixels(typical for big monitors) */
+@media only screen and (min-width: 1200px) {
+  .signup {
+    width: 60%;
+  }
+
+  .row {
+    flex-direction: row;
+  }
+}

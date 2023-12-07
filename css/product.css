@@ -1,0 +1,348 @@
+/* Flex container for the entire content */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top banner styling */
+.banner-bar {
+  text-align: center;
+  background: #e60000;
+  color: white;
+  width: 100%;
+  padding: 1rem;
+  font-style: italic;
+  font-weight: 600;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Individual slide styling */
+.slide {
+  display: none;
+  max-width: 400px;
+  position: relative;
+}
+
+/* Image within each slide */
+.slide img {
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* Image control buttons on each slide */
+.img-control {
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: 45%;
+  font-size: 42px;
+  cursor: pointer;
+}
+
+/* Next image button */
+.next-img {
+  right: 0;
+}
+
+/* Previous image button */
+.prev-img {
+  left: 0;
+}
+
+/* Show image button */
+.show-img-button {
+  width: 90%;
+  text-align: center;
+  margin-top: 4px;
+}
+
+.show-img-button a {
+  text-decoration: none;
+  border: 1px solid grey;
+  padding: 0.2rem;
+}
+
+/* Basic information container */
+.basic-info-container {
+  padding: 8px;
+}
+
+/* Information container */
+.info-container {
+  padding: 8px;
+}
+
+/* Product information styling */
+.product-info {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.price {
+  margin-top: 8px;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.color {
+  margin-top: 8px;
+}
+
+.colors {
+  display: flex;
+}
+
+.color p {
+  font-weight: 600;
+}
+
+.color .box {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  margin: 4px;
+}
+
+/* Color variations */
+.colors .red {
+  background-color: red;
+}
+
+.colors .yellow {
+  background-color: yellow;
+}
+
+.colors .black {
+  background-color: black;
+}
+
+.colors .green {
+  background-color: green;
+}
+
+/* Size container styling */
+.size-container {
+  margin-top: 8px;
+}
+
+.size {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.size-container p {
+  font-weight: 600;
+}
+
+.size .size-box {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  margin: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.size .size-box:active {
+  background-color: red;
+}
+
+/* Heading for product information */
+.product-info h4 {
+  margin: 8px 0;
+  color: green;
+}
+
+/* Action buttons styling */
+.action-buttons button {
+  width: 100%;
+  padding: 1rem;
+  margin: 8px 0;
+  border: none;
+  font-weight: 500;
+  border-radius: 8px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.action-buttons button.add {
+  background-color: #e60000;
+  color: white;
+}
+
+.action-buttons button.find-in-store {
+  background-color: #e5e5e5;
+  color: black;
+}
+
+.action-buttons button.add-to-wishlist {
+  background: transparent;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.action-buttons button.add-to-wishlist span {
+  color: red;
+  margin-left: 4px;
+}
+
+/* About section styling */
+.about {
+  margin: 8px 0;
+}
+
+.about p {
+  margin-top: 8px;
+}
+
+/* Delivery section styling */
+.delivery {
+  margin: 8px 0;
+}
+
+.delivery p {
+  margin-top: 8px;
+}
+
+/* Return section styling */
+.return {
+  margin: 8px 0;
+}
+
+/* Additional information styling */
+.info-container ul {
+  list-style: inside;
+  padding: 8px;
+}
+
+.info-container ul li {
+  margin: 4px 0;
+}
+
+/* Card container styling */
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Individual card styling */
+.card {
+  width: 100%;
+  margin: 4px 0;
+  background-color: #282828;
+  padding: 0.6rem;
+  display: flex;
+  color: white;
+}
+
+.card span {
+  font-size: 48px;
+}
+
+.card .text {
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* Footer table styling */
+footer table {
+  text-align: center;
+  border-collapse: collapse;
+  width: 70%;
+  margin: 8px auto;
+}
+
+footer table,
+th,
+td {
+  border: 1px solid;
+}
+
+footer table th,
+td {
+  margin: 8px;
+  padding: 8px;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  background-color: red;
+  color: white;
+  padding: 15px;
+}
+
+/* Media query for screens with a minimum width of 481 pixels and a maximum of 768 pixels (typical for larger phone and tablet) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .slide {
+    max-width: 500px;
+  }
+
+  .card {
+    width: 40%;
+    margin: 8px;
+  }
+
+  .card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+/* Media query for screens with a minimum width of 768 pixels and a maximum of 1023 pixels (typical for laptop) */
+@media only screen and (min-width: 768px) {
+  .slide {
+    max-width: 550px;
+  }
+
+  /* Section 1 styling for larger screens */
+  .section1 {
+    display: flex;
+    width: 100%;
+    justify-content: stretch;
+    align-items: flex-start;
+  }
+
+  .section1 .slideshow-container {
+    align-items: center;
+    position: sticky;
+    top: 0;
+    margin-top: 32px;
+    width: 50%;
+  }
+
+  .section1 .basic-info-container {
+    margin-top: 32px;
+    width: 50%;
+  }
+
+  .card {
+    width: 40%;
+    margin: 8px;
+  }
+
+  .card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - SoleHeaven</title>
+    <!-- External Stylesheet  Reference -->
+    <link rel="stylesheet" href="../css/aboutus.css" />
+    <!-- Google Fonts Reference -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Sora:wght@500&display=swap&family=Poppins:wght@300&family=Raleway:wght@700&display=swap&family=Oswald:wght@700&display=swap&family=Dosis:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+
+  <body>
+    <!-- NavBar -->
+    <div class="container">
+      <div class="navbar">
+        <h1 class="logo" style="text-align: left">
+          <a href="../index.html">
+            <img src="../img/Sole__1_-removebg-preview.png" alt="" />
+          </a>
+          <span
+            class="material-symbols-outlined menu-icon"
+            onclick="toggleClass()"
+            style="color: red"
+          >
+            menu
+          </span>
+        </h1>
+
+        <nav id="list">
+          <ul class="links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./aboutus.html">About</a></li>
+            <li><a href="./contacts.html">Contact Us</a></li>
+
+            <li><a href="./signup.html">Sign Up</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- Main Class -->
+    <main class="main">
+      <!-- Row 1 -->
+      <div class="row1">
+        <div class="column1">
+          <!-- Change copyright image below -->
+          <img
+            id="img1"
+            src="../img/aboutus_image1.jpg"
+            alt="Our Story Image"
+          />
+        </div>
+        <div class="column2">
+          <h2 id="heading1">Sole Heaven</h2>
+          <img
+            id="img1_mobile"
+            src="../img/aboutus_image1.jpg"
+            alt="Our Story Image"
+          />
+          <p id="para1">
+            Welcome to SoleHeaven, where style meets comfort! Discover a curated
+            collection of trendy and timeless footwear, from casual kicks to
+            elegant heels. Committed to quality, we aim to be your go-to
+            destination for all things shoes. Step into fashion-forward comfort
+            with us.
+          </p>
+          <ul>
+            <li>Sneakers</li>
+            <li>|</li>
+            <li>Running</li>
+            <li>|</li>
+            <li>Walking</li>
+          </ul>
+          <button>
+            <a
+              href="../index.html#collection"
+              style="text-decoration: none; color: white"
+              >SHOP NOW</a
+            >
+          </button>
+        </div>
+      </div>
+      <!-- Row 2 -->
+      <div class="row2">
+        <h1>OWN THE <span id="span_highlight">FLOOR</span></h1>
+        <h2>Show the world your style with iconic sneakers and fresh looks.</h2>
+      </div>
+      <!-- Row 3 -->
+      <div class="row3">
+        <div class="column1">
+          <h2 id="heading2">Meet Our Team</h2>
+          <img
+            id="img2_mobile"
+            src="../img/aboutus_image2.jpeg"
+            alt="Meet Our Team"
+          />
+          <h3 id="quote1">"Faces Behind the Footwear Magic"</h3>
+          <p id="para2">
+            At Sole Heaven, meet the minds shaping your shoe-shopping
+            experience. <span id="span_highlight">XYZ Heaven</span>, our Chief
+            Shoe Enthusiast, envisioned a redefined shopping experience, while
+            <span id="span_highlight">ABC Creations</span> adds a touch of style
+            magic to every collection. Our dedicated customer service team is
+            your support squad, ensuring your experience is seamless. Together,
+            we're a community of shoe lovers, passionate about helping you put
+            your best foot forward.
+          </p>
+        </div>
+        <div class="column2">
+          <img id="img2" src="../img/aboutus_image2.jpeg" alt="Meet Our Team" />
+        </div>
+      </div>
+      <!-- Row 4 -->
+      <div class="row4">
+        <div class="column1">
+          <img id="img3" src="../img/aboutus_image3.jpg" alt="Meet Our Team" />
+        </div>
+        <div class="column2">
+          <h2 id="heading3">Success Story</h2>
+          <img
+            id="img3_mobile"
+            src="../img/aboutus_image3.jpg"
+            alt="Meet Our Team"
+          />
+          <h3 id="quote2">"From Sole Ambitions to Global Trends"</h3>
+          <p id="para3">
+            Embarking on a journey fueled by passion, Sole Heaven has grown from
+            a modest boutique to a global online destination for footwear
+            enthusiasts. Our commitment to quality and trendsetting designs has
+            led to key milestones, such as the achievement of a remarkable
+            <span id="span_highlight">98%</span> customer satisfaction
+            milestone! Our commitment to delivering unparalleled design
+            excellence and personalized experiences has resonated with our
+            clients, making every project a journey of delight. This success is
+            a testament to our dedication to curating a selection that
+            seamlessly blends fashion and comfort, propelling us forward with
+            each stylish stride.
+          </p>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2023 SoleHeaven, Inc. All Rights Reserved</p>
+    </footer>
+  </body>
+  <!-- JavaScript To Handle Navbar-->
+  <script>
+    function toggleClass() {
+      console.log("Toggle class");
+      if (document.getElementById("list").style.display == "")
+        document.getElementById("list").style.display = "block";
+      else document.getElementById("list").style.display = "";
+    }
+  </script>
+</html>
